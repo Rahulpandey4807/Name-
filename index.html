@@ -16,7 +16,7 @@
         document.getElementById("searchForm").addEventListener("submit", function(event) {
             event.preventDefault();
             var name = document.getElementById("nameInput").value;
-            var url = "https://api.example.com/count?name=" + encodeURIComponent(name); // Replace with the actual API URL
+            var url = "name=" + encodeURIComponent(name); // Replace with the actual API URL
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
